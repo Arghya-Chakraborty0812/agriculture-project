@@ -1,0 +1,26 @@
+ .navbar-brand{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.nav-link{
+    color: aliceblue;
+}
+.nav-link:hover{
+    color: rgb(203, 221, 8);
+    transition: 0.3s ease;
+    
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    border: none; /* Remove borders if needed */
+}
+body {
+    background-image: url('https://suchitra-sahoo.github.io/AgriLearnNetwork/images/carousel-img-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Makes the background fixed while scrolling */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
