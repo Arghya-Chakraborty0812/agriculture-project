@@ -42,6 +42,7 @@ body {
     transform: translate(-50%, -50%); /* Adjust positioning to be centered */
     text-align: center; 
     font-size: 3rem;
+    z-index: 1;
 }
 #welcomeheading{
     color: #fff;
@@ -58,4 +59,18 @@ body {
     text-align: center;
     font-size: 3rem;
 }
+/* Resources */
 
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin-top: 100px;
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+.card:hover{
+    transform: translateY(-30px);
+  box-shadow: 50px rgba(0, 0, 0, 0.2);
+  transition: transform 0.7s ease;
+}
