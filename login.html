@@ -12,11 +12,19 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: rgb(5, 51, 20);
+            /*background-color: rgb(5, 51, 20);
+            background: linear-gradient(315deg, #FF4D4D, #053314);*/
+            background-image: url("images/backgroundimage3.jpg");
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+
+
         }
     
         .form-signin {
-          max-width: 330px;
+          max-width: 500px;
+          height: 550px;
           padding: 15px;
           background-color: white; 
           border-radius: 10px;
@@ -56,6 +64,11 @@
           font-size: 12px; 
           color: #6c757d; 
         }
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 10px; 
+        }
       </style>
       
 
@@ -63,7 +76,7 @@
 <body>
     <main class="form-signin w-100 m-auto">
         <form>
-          <img class="mb-4" src="./premium_photo-1661962692059-55d5a4319814.jpg" alt="" width="72" height="57">
+          <img class="mb-4" src="images/premium_photo-1661962692059-55d5a4319814.jpg" alt="" width="72" height="57">
           <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
       
           <div class="form-floating">
@@ -82,7 +95,13 @@
             </label>
           </div>
           <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-          <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
+          <p class="forgot-password">
+            <a href="#" class="text-body-secondary">Forgot Password?</a>
+           </p>
+           <p class="text-center mt-3">
+            Don't have an account? 
+            <a href="#" class="text-body-secondary">SIGN UP NOW</a>
+          </p>
         </form>
       </main>
 </body>
