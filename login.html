@@ -69,6 +69,14 @@
             text-align: center;
             margin-top: 10px; 
         }
+        #forgotpass:hover{
+          transition: color 0.5s ease;
+          color: red !important;
+        }
+        #signup:hover{
+          transition: color 0.5s ease;
+          color: red !important;          
+        }
       </style>
       
 
@@ -96,11 +104,11 @@
           </div>
           <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
           <p class="forgot-password">
-            <a href="#" class="text-body-secondary">Forgot Password?</a>
+            <a href="#" class="text-body-secondary" id="forgotpass">Forgot Password?</a>
            </p>
            <p class="text-center mt-3">
             Don't have an account? 
-            <a href="#" class="text-body-secondary">SIGN UP NOW</a>
+            <a href="#" class="text-body-secondary" id="signup">SIGN UP NOW</a>
           </p>
         </form>
       </main>
