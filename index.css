@@ -1,4 +1,4 @@
- .navbar-brand{
+.navbar-brand{
     font-size: 50px;
     font-family: sans-serif;
     font-weight: bolder;
@@ -16,11 +16,61 @@
     border: none; /* Remove borders if needed */
 }
 body {
-    background-image: url('https://suchitra-sahoo.github.io/AgriLearnNetwork/images/carousel-img-3.jpg');
+    background-image: url('https://static-images.vnncdn.net/files/publish/2022/7/7/imported-fruits-leading-to-fierce-competition-with-local-ones-280042bb79474188846497f22ac8dbfd.jpg');
+    opacity:1;
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Makes the background fixed while scrolling */
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
+}
+.welcomebox{
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background matching navbar */
+    color: #fff; /*Text Color*/
+    padding: 50px; /* Add some padding */
+    border-radius: 60px; /* Rounded corners for better aesthetics */
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning to be centered */
+    text-align: center; 
+    font-size: 3rem;
+    z-index: 1;
+}
+#welcomeheading{
+    color: #fff;
+    font-size: 60px;
+}
+#resources{
+    display: block;
+    padding: 50px;
+    margin-top: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+#resources h1{
+    color: #0e0707;
+    text-align: center;
+    font-size: 3rem;
+}
+/* Resources */
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    margin-top: 100px;
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+.card:hover{
+    transform: translateY(-30px);
+  box-shadow: 50px rgba(0, 0, 0, 0.2);
+  transition: transform 0.7s ease;
 }
