@@ -37,7 +37,7 @@ body {
     padding: 50px; /* Add some padding */
     border-radius: 60px; /* Rounded corners for better aesthetics */
     position: absolute; /* Position it absolutely */
-    top: 50%; /* Center vertically */
+    top: 70%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust positioning to be centered */
     text-align: center; 
@@ -362,7 +362,7 @@ button[type="submit"]:hover {
   
   /* FAQs */
   #FAQ{
-    display: block;
+    display: block; 
     padding: 2rem;
     margin-top: 2rem;
     background-color: rgba(255, 255, 255, 0.8);
