@@ -12,6 +12,7 @@
     font-size: 3rem;
     font-family: sans-serif;
     font-weight: bolder;
+    margin-left: -76rem;
     }
     .nav-link{
     color: aliceblue;
@@ -137,8 +138,12 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
-        <button id="btn-mode">dark-mode</button>
-          <a class="navbar-brand" href="#" style="margin-left: 30px;">Crop Commerce</a>
+        <!-- <button id="btn-mode">dark-mode</button> -->
+        <div class="container">
+          <input type="checkbox" id="check">
+          <label for="check" class="button"></label>
+      </div>
+          <a class="navbar-brand" href="#">Crop Commerce</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

@@ -1,4 +1,4 @@
-let btn1 = document.querySelector("#btn-mode");
+let btn1 = document.querySelector("input");
 let body = document.querySelector("body");
 
 let curr = "light";
