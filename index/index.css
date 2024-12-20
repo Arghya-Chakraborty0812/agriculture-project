@@ -374,10 +374,12 @@ button[type="submit"]:hover {
     font-size: 3rem;
 }
 .faq-container{
+    margin-top: 1.5rem;
     background-color: transparent;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    gap: 2rem;
 }
 .questions-container{
     margin-top: 2rem;
@@ -387,7 +389,8 @@ button[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 25rem;
+    align-items: center;
+    margin: auto;
     width: 50%;
     text-align: center;
     height: 6rem;
