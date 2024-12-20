@@ -373,3 +373,36 @@ button[type="submit"]:hover {
     text-align: center;
     font-size: 3rem;
 }
+.faq-container{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.questions-container{
+    margin-top: 2rem;
+    /* background-color: white;  */
+    /* border:0.2rem dashed rgb(46, 25, 77);
+    border-radius: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25rem;
+    width: 50%;
+    text-align: center;
+    height: 6rem;
+    padding-top: 2.5rem;
+}
+#question:hover{
+    cursor: pointer;
+    color: darkgreen;
+}
+#question{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+#answer{
+      display: none;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
