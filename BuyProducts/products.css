@@ -1,0 +1,80 @@
+.navbar-brand{
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-left: -70rem;
+}
+.nav-link{
+color: aliceblue;
+}
+.nav-link:hover{
+    color: rgb(203, 221, 8);
+    transition: 0.3s ease;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
+    border: none; /* Remove borders if needed */
+}
+
+body{
+    background-color: white ;
+    color: black;
+}
+.mb-5{
+        
+}
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white ;
+    color: black;
+}
+    #btn-mode{
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    #btn-mode:hover {
+        background-color: #0056b3;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .button{
+        background-color: #d2d2d2;
+        width: 40px;
+        height: 20px;
+        border-radius: 4rem;
+        cursor: pointer;
+        position: relative;
+        transition: 0.2s;
+    }
+    .button::before{
+        position: absolute;
+        content: '';
+        background-color: #fff;
+        width: 10px;
+        height: 10px;
+        border-radius: 1rem;
+        margin: 0.35rem;
+        transition: 0.2s;
+    
+    }
+input:checked + .button{
+        background-color: #20096d;
+    }
+    input:checked + .button::before{
+        transform: translateX(1rem);
+    }
+    input{
+        display: none;
+    }
