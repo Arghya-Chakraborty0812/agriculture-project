@@ -204,14 +204,14 @@ h1{
   
 /* products page styling */
 #background{
-  background-image: url(/agriculture-project/images/backgroundimage3.jpg);
+  background-image: url(../images/backgroundimage3.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
  
 }
 .dark #background{
-  background-image: url(/agriculture-project/images/istockphoto-1144762763-612x612.jpg);
+  background-image: url(../images/istockphoto-1144762763-612x612.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
