@@ -16,7 +16,7 @@
     border: none; /* Remove borders if needed */
 }
 body {
-    background-image: url('/public/images/backgroundindex.jpg');
+    background-image: url('images/backgroundindex.jpg');
     opacity:1;
     background-size: cover;
     background-position: center;
