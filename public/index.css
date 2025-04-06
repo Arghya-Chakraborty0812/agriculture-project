@@ -447,7 +447,7 @@ button[type="submit"]:hover {
         font-size: 4rem;
     }
     .welcomebox {
-        margin-top: -25rem !important;
+        margin-top: -1.4rem;
         font-size: 2.5rem !important;
         padding: 60px !important;
         border-radius: 50px !important;
