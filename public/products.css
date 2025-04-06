@@ -228,7 +228,7 @@ h1{
   
 /* products page styling */
 #background{
-  background-image: url(/agriculture-project/public/images/agriculturebg.jpg);
+  background-image: url(./images/agriculturebg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -236,7 +236,7 @@ h1{
 }
 
 .dark #background{
-  background-image: url(/agriculture-project/public/images/istockphoto-1144762763-612x612.jpg);
+  background-image: url(./images/istockphoto-1144762763-612x612.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
