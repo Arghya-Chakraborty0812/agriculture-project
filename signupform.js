@@ -5,6 +5,7 @@ const app = express();
 
 //Middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //Connection to MongoDB
 mongoose.connect('mongodb://localhost:27017/agriculture', {
@@ -24,12 +25,19 @@ const userSchema = new mongoose.Schema({
 //Model
 const User = mongoose.model('User', userSchema);
 
+//Get
+app.get('/users', (req,res) => {
+    User.find()
+    .then(users => res.json(users))
+    .catch(err => res.status(500).json({message : err.message}))
+});
+
 //Post
 app.post('/signup', (req,res) => {
     const newUser = new User({
-        fullName : req.body.fullName,
+        fullName : req.body.fullUserName,
         username : req.body.username,
-        password : req.body.password
+        password : req.body.passkey
     });
     newUser.save()
     .then(() => res.status(201).json({

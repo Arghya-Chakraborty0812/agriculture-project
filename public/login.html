@@ -156,20 +156,20 @@
             <a href="#" class="text-body-secondary" id="signup">SIGN UP NOW</a>
           </p>
         </form>
-        <form class="form-signup">
+        <form class="form-signup" action="http://localhost:8000/signup" method="post">
           <img class="mb-4" src="images/premium_photo-1661962692059-55d5a4319814.jpg" alt="" width="72" height="57">
           <h1 class="h3 mb-3 fw-normal">Create an Account</h1>
       
           <div class="form-floating">
-              <input type="text" class="form-control" id="floatingName" placeholder="Full Name">
+              <input type="text" class="form-control" id="floatingName" placeholder="Full Name" name="fullUserName">
               <label for="floatingName">Full Name</label>
           </div>
           <div class="form-floating">
-              <input type="text" class="form-control" id="floatingUsername" placeholder="Username">
+              <input type="text" class="form-control" id="floatingUsername" placeholder="Username" name="username">
               <label for="floatingUsername">Username</label>
           </div>
           <div class="form-floating">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="passkey">
               <label for="floatingPassword">Password</label>
           </div>
           <div class="form-floating">
