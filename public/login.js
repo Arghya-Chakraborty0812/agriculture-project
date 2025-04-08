@@ -19,7 +19,7 @@ document.getElementById('signupForm').addEventListener('submit', async function 
     const formData = new FormData(form);
 
     const data = {
-        fullName: formData.get('fullUserName'),
+        fullName: formData.get('fullName'),
         username: formData.get('username'),
         passkey: formData.get('passkey')
     };
@@ -47,3 +47,37 @@ document.getElementById('signupForm').addEventListener('submit', async function 
     }
 });
 
+document.querySelector("form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const username = document.getElementById("floatingInput").value;
+    const password = document.getElementById("floatingPassword").value;
+
+    const data = {
+        username: username,
+        passkey: password
+    };
+
+    try {
+        const response = await fetch("http://localhost:8000/signin", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (response.status === 200) {
+            alert(result.message);
+            window.location.href = result.redirect;  // Redirect after successful login
+        }
+        else {
+            alert("Sign-in failed: " + result.message);
+        }
+    } catch (error) {
+        alert("Something went wrong during sign-in");
+        console.error(error);
+    }
+});
