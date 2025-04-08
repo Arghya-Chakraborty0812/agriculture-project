@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
+const bcrypt = require('bcrypt');
 
 const app = express();
 const port = 8000;
@@ -39,37 +40,47 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchema);
 
-// Signin
+// Signin with bcrypt
 app.post('/signin', (req, res) => {
     const { username, passkey } = req.body;
-
-    User.findOne({ username: username, password: passkey })
-        .then(user => {
-            if (user) {
-                res.status(200).json({ message: "Sign-in successful", redirect: "index.html" });
-            } else {
-                res.status(401).json({ message: "Invalid username or password" });
+    User.findOne({username : username})
+    .then(user => {
+        if(!user){
+            return res.status(401).json({message : "Invalid Username or Password"});
+        }
+        bcrypt.compare(passkey, user.password)
+        .then(match => {
+            if(match){
+                res.status(200).json({message : "Sign-in Successful", redirect : 'index.html'});
             }
-        })
-        .catch(err => {
-            res.status(500).json({ message: "Server error" });
+            else{
+                res.status(401).json({message : "Invalid Username or Password"});
+            }
         });
+    })
+    .catch(err => {
+        res.status(500).json({message : "Server Error"});
+    })
 });
 
-// Signup
+// Signup with bcrypt
 app.post('/signup', (req, res) => {
     const { fullName, username, passkey } = req.body;
 
-    const newUser = new User({
-        fullName,
-        username,
-        password: passkey
-    });
+    bcrypt.hash(passkey, 10)
+        .then(hashedPassword => {
+            const newUser = new User({
+                fullName,
+                username,
+                password: hashedPassword // ✅ Now it's a string, not a Promise
+            });
 
-    newUser.save()
+            return newUser.save();
+        })
         .then(() => res.status(201).json({ message: "Account Created Successfully" }))
         .catch(err => res.status(500).json({ message: err.message }));
 });
+
 
 // Start server
 app.listen(port, () => {
