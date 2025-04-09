@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login Page</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href=""/>
   <style>
     * {
     margin: 0;
@@ -58,7 +58,7 @@
   }
   
   .underline {
-    width: 90px;
+    width: 240px;
     height: 5px;
     background-color: #6ee75b;
     margin-bottom: 30px;
@@ -70,7 +70,7 @@
     padding: 30px;
     border-radius: 20px;
     width: 500px;
-    height: 500px;
+    height: 600px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   
@@ -104,18 +104,21 @@
   }
   
   .signup {
+    display: block;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 40px;
     color: #032801;
     font-weight: 500;
+    text-decoration: none;
   }
-  .signup:hover{
+  
+  .signup:hover {
     color: #dea710;
     cursor: pointer;
   }
   
   .login-btn {
-    margin-top: 120px;
+    margin-top: 50px;
     width: 100%;
     background-color: #6ee75b;
     padding: 15px;
@@ -139,23 +142,28 @@
   <div class="background-shape shape2"></div>
 
   <div class="container">
-    <h2 class="login-title">Login</h2>
+    <h2 class="login-title">Create Account</h2>
     <div class="underline"></div>
 
-    <form id="loginForm" class="login-box">
-      <div class="input-group">
-          <label for="username">Username</label>
-          <input type="text" id="username" name="username" required />
-          <span class="icon">👤</span>
-      </div>
-      <div class="input-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required />
-          <span class="icon">🔒</span>
-      </div>
-      <a class="signup" href="./signup.html">Sign up?</a>
-      <button type="submit" class="login-btn">Login</button>
-  </form>
+    <form id="signupForm" class="login-box">
+        <div class="input-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required />
+            <span class="icon">🧑‍💼</span>
+        </div>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+            <span class="icon">👤</span>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <span class="icon">🔒</span>
+        </div>
+        <a class="signup" href="./login.html">Already have an account? Login</a>
+        <button type="submit" class="login-btn">Sign Up</button>
+    </form>
   </div>
   <script src="./login.js"></script>
 </body>
