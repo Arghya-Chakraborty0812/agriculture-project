@@ -1,12 +1,14 @@
 # 🌾 Agriculture Project
 
-A simple web application for managing agricultural user data with sign-up and sign-in functionality. Built using **HTML**, **CSS**, **JavaScript**, **Node.js**, **Express**, and **MongoDB**.
+A simple web application for managing agricultural user data with sign-up and sign-in functionality. Built using **HTML**, **CSS**, **JavaScript**, **Node.js**, **Express.js**, and **MongoDB**.
 
 ---
 
 ## 🔗 Live Demo
 
-👉 
+👉
+https://github.com/user-attachments/assets/18981806-d86f-430f-828b-c320bc91420d
+
 
 ---
 
@@ -35,7 +37,7 @@ A simple web application for managing agricultural user data with sign-up and si
    `mongod` (in a separate terminal)
 
 5. Run the backend server  
-   `node server.js`
+   `nodemon server.js`
 
 6. Open browser at  
    `http://localhost:8000`
