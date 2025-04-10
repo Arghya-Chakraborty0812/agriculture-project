@@ -48,35 +48,34 @@ body{
         margin: 0;
     }
     .button{
-        margin-left: 100px;
-        background-color: #d2d2d2;
-        width: 70px;
-        height: 10px;
-        border-radius: 4rem;
-        cursor: pointer;
-       
-        transition: 0.2s;
-    }
-    .button::before{
-        position: absolute;
-        content: '';
-        background-color: #fff;
-        width: 10px;
-        height: 10px;
-        border-radius: 1rem;
-        margin: 0.35rem;
-        transition: 0.2s;
-    
-    }
-input:checked + .button{
-        background-color: #20096d;
-    }
-    input:checked + .button::before{
-        transform: translateX(1rem);
-    }
-    input{
-        display: none;
-    }
+      background-color: #d2d2d2;
+      width: 40px;
+      height: 20px;
+      border-radius: 4rem;
+      cursor: pointer;
+      position: relative;
+      transition: 0.2s;
+  }
+  .button::before{
+      position: absolute;
+      content: '';
+      background-color: #fff;
+      width: 10px;
+      height: 10px;
+      border-radius: 1rem;
+      margin: 0.35rem;
+      transition: 0.2s;
+  
+  }
+  input:checked + .button{
+      background-color: #20096d;
+  }
+  input:checked + .button::before{
+      transform: translateX(1rem);
+  }
+  input{
+      display: none;
+  }
 h1{
     padding: 2rem;
     color: #070e08;
